@@ -53,4 +53,4 @@ python tp5-getshell.py -f urls.txt -t 2 -s 10<br/>
 博客： http://www.lsablog.com/<br/>
 gmail: lsasguge196@gmail.com<br/>
 qq: 2894400469@qq.com<br/>
-issues: https://github.com/theLSA/ueditor-getshell/issues
+issues: https://github.com/theLSA/tp5-getshell/issues
