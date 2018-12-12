@@ -1,4 +1,4 @@
-tp5-getshell.py - thinkphp5 rce getshell漏洞检测工具
+tp5-getshell.py - thinkphp5 rce漏洞检测工具
 ==
 <br/><br/>
 # 概述 
