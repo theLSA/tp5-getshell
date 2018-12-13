@@ -1,6 +1,7 @@
 tp5-getshell.py - thinkphp5 rce漏洞检测工具
 ==
-<br/><br/>
+---------------
+<br/>
 # 概述 
 <br/>
 
@@ -8,7 +9,8 @@ tp5-getshell.py - thinkphp5 rce漏洞检测工具
 [thinkphp5 RCE漏洞重现及分析](http://www.lsablog.com/networksec/penetration/thinkphp5-rce-analysis/)
 
 <br/>
-<br/>
+本工具支持单url/批量检测，有phpinfo模式、cmd shell模式、getshell(写一句话)模式。
+<br/><br/>
 
 # 快速开始
 
@@ -17,15 +19,15 @@ python tp5-getshell.py -h<br/>
 
 ![](https://github.com/theLSA/tp5-getshell/raw/master/demo/p4.png)<br/>
 <br/>
-单url检测（poc）<br/>
+单url检测（phpinfo模式）<br/>
 
-使用4种poc检测<br/>
+使用4种poc-phpinfo检测<br/>
 
 python tp5-getshell.py -u http://www.xxx.com:8888/think5124/public/<br/>
 ![](https://github.com/theLSA/tp5-getshell/raw/master/demo/p3.png)<br/>
 <br/>
 
-单url检测（getshell）<br/>
+单url检测（getshell模式）<br/>
 
 使用3种exp进行getshell，遇到先成功的exp就停止，防止重复getshell<br/>
 
@@ -34,7 +36,7 @@ python tp5-getshell.py -u http://www.xxx.com:8888/think5124/public/ –exploit<b
 ![](https://github.com/theLSA/tp5-getshell/raw/master/demo/p2.png)<br/>
 <br/>
 
-单url检测（命令行shell模式）<br/>
+单url检测（cmd shell模式）<br/>
 
 python tp5-getshell.py -u http://www.xxx.com/ –cmdshell<br/>
 
@@ -48,6 +50,9 @@ python tp5-getshell.py -u http://www.xxx.com/ –cmdshell<br/>
 python tp5-getshell.py -f urls.txt -t 2 -s 10<br/>
 ![](https://github.com/theLSA/tp5-getshell/raw/master/demo/p0.png)<br/>
 <br/>
+
+----------------------
+
 # 反馈
 <br/>
 博客： http://www.lsablog.com/<br/>
