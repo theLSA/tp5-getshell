@@ -1,7 +1,9 @@
 tp5-getshell.py - thinkphp5 rce漏洞检测工具
 ==
----------------
+
 <br/>
+---------------
+
 
 # 概述 
 
@@ -12,7 +14,25 @@ tp5-getshell.py - thinkphp5 rce漏洞检测工具
 
 <br/>
 本工具支持单url/批量检测，有phpinfo模式、cmd shell模式、getshell(写一句话)模式，批量检测直接使用getshell模式。
-<br/><br/>
+
+<br/>
+---------------
+
+
+
+
+# 需求
+
+<br/>
+python2.7
+
+<br/>
+pip install -r requirements.txt 
+
+<br/>
+--------------
+
+
 
 # 快速开始
 
