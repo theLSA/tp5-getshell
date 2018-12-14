@@ -1,14 +1,13 @@
 tp5-getshell.py - thinkphp5 rce漏洞检测工具
 ==
 
-<br/>
 
 -----------------------
 
 
 # 概述 
 
-<br/>
+
 控制器过滤不严导致rce,漏洞详情参考
 
 [thinkphp5 RCE漏洞重现及分析](http://www.lsablog.com/networksec/penetration/thinkphp5-rce-analysis/)
@@ -25,7 +24,7 @@ tp5-getshell.py - thinkphp5 rce漏洞检测工具
 
 # 需求
 
-<br/>
+
 python2.7
 
 <br/>
@@ -39,7 +38,7 @@ pip install -r requirements.txt
 
 # 快速开始
 
-<br/>
+
 python tp5-getshell.py -h<br/>
 
 ![](https://github.com/theLSA/tp5-getshell/raw/master/demo/p4.png)<br/>
@@ -79,7 +78,7 @@ python tp5-getshell.py -f urls.txt -t 2 -s 10<br/>
 ----------------------
 
 # 反馈
-<br/>
+
 博客： http://www.lsablog.com/<br/>
 gmail: lsasguge196@gmail.com<br/>
 qq: 2894400469@qq.com<br/>
